@@ -6,6 +6,12 @@ install vagrant
 
 see http://localhost
 
+warning: When VM restarted, run
+
+    sudo service apache2 reload
+
+because apache started before /vagrant was mounted
+
 # Run in dev server
 
     vagrant up
