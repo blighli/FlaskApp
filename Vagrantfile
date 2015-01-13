@@ -7,5 +7,8 @@ Vagrant.configure(2) do |config|
 	#config.vm.provision "shell", inline: <<-SHELL
 	#	sudo apt-get update
 	#	sudo apt-get install -y apache2
+	#	sudo apt-get install -y libapache2-mod-wsgi
+	#	sudo apt-get install -y python-pip
+	#	sudo 
 	#SHELL
 end
