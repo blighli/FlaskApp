@@ -4,18 +4,24 @@ from flask import render_template
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
+@app.route('/index.html')
+def index():
     return render_template('index.html')
 
-@app.route('/base')
+
+@app.route('/admin.html')
+def admin():
+    return render_template('admin.html')
+
+@app.route('/base.html')
 def base():
     return render_template('base.html')
 
-@app.route('/login')
+@app.route('/login.html')
 def login():
     return render_template('login.html')
 
-@app.route('/test')
+@app.route('/test.html')
 def test():
     return render_template('ReadMe.txt')
 
