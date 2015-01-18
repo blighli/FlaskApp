@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>后台管理系统</title>
     <link href="{{ url_for('static',filename='ace/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static',filename='ace/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static',filename='ace/css/ace.min.css') }}" rel="stylesheet">
@@ -208,14 +208,14 @@
         </div><!-- /.侧栏快捷按钮 -->
 
         <ul class="nav nav-list">
-            <li class="">
+            <li class="" id="menu_1">
                 <a href="admin.html">
                     <i class="menu-icon fa fa-tachometer"></i>
                     <span class="menu-text"> 首页 </span>
                 </a>
                 <b class="arrow"></b>
             </li>
-            <li class="active open">
+            <li class="" id="menu_2">
                 <a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-tag"></i>
                     <span class="menu-text"> 菜单 </span>
@@ -224,14 +224,14 @@
                 </a>
                 <b class="arrow"></b>
                 <ul class="submenu">
-                    <li class="active">
+                    <li class="" id="menu_2_1">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
                             子菜单1
                         </a>
                         <b class="arrow"></b>
                     </li>
-                    <li class="">
+                    <li class="" id="menu_2_2">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
                             子菜单1

@@ -18,3 +18,13 @@
     <td>Feb 12</td>
     <td>Expiring</td>
 {% endblock table_td %}
+
+{% block jscode %}
+    {{ super() }}
+    <script>
+    $(document).ready(function() {
+        $("#menu_2").addClass("active open");
+        $("#menu_2_1").addClass("active");
+    });
+    </script>
+{% endblock %}
