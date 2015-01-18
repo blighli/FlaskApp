@@ -4,7 +4,15 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="clearfix">
-                <div class="pull-right tableTools-container"></div>
+                <a href="#" class="btn btn-success btn-sm">
+                    <i class="fa fa-plus"></i> 添加
+                </a>
+                <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fa fa-trash"></i> 删除
+                </a>
+                <div class="pull-right tableTools-container">
+
+                </div>
             </div>
             <div class="table-header">
                 用户列表
@@ -90,7 +98,7 @@
                     {
                         "sExtends": "copy",
                         "sToolTip": "复制到剪贴板",
-                        "sButtonClass": "btn btn-white btn-primary btn-bold",
+                        "sButtonClass": "btn btn-white",
                         "sButtonText": "<i class='fa fa-copy bigger-110 pink'></i>",
                         "fnComplete": function() {
                             this.fnInfo( '<h3 class="no-margin-top smaller">Table copied</h3>\
@@ -103,21 +111,21 @@
                     {
                         "sExtends": "csv",
                         "sToolTip": "导出CSV",
-                        "sButtonClass": "btn btn-white btn-primary  btn-bold",
+                        "sButtonClass": "btn btn-white",
                         "sButtonText": "<i class='fa fa-file-excel-o bigger-110 green'></i>"
                     },
 
                     {
                         "sExtends": "pdf",
                         "sToolTip": "导出PDF",
-                        "sButtonClass": "btn btn-white btn-primary  btn-bold",
+                        "sButtonClass": "btn btn-white",
                         "sButtonText": "<i class='fa fa-file-pdf-o bigger-110 red'></i>"
                     },
 
                     {
                         "sExtends": "print",
                         "sToolTip": "打印",
-                        "sButtonClass": "btn btn-white btn-primary  btn-bold",
+                        "sButtonClass": "btn btn-white",
                         "sButtonText": "<i class='fa fa-print bigger-110 grey'></i>",
 
                         "sMessage": "<div class='navbar navbar-default'><div class='navbar-header pull-left'><a class='navbar-brand' href='#'><small>Optional Navbar &amp; Text</small></a></div></div>",
@@ -159,7 +167,7 @@
             });
 
             //style it
-            $(colvis.button()).addClass('btn-group').find('button').addClass('btn btn-white btn-info btn-bold')
+            $(colvis.button()).addClass('btn-group').find('button').addClass('btn btn-white')
 
             //and append it to our table tools btn-group, also add tooltip
             $(colvis.button())
