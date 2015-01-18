@@ -13,9 +13,9 @@ def index():
 def admin():
     return render_template('admin.html')
 
-@app.route('/base.html')
+@app.route('/ace_base.html')
 def base():
-    return render_template('base.html')
+    return render_template('ace_base.html')
 
 @app.route('/login.html')
 def login():
