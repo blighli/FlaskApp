@@ -1,0 +1,301 @@
+{% extends "ace_base.html" %}
+
+
+{% block page %}
+
+    <div class="widget-box">
+
+        <div class="widget-header widget-header-blue widget-header-flat">
+            <h4 class="widget-title lighter">用户信息</h4>
+            <div class="widget-toolbar">
+                <label>
+                    <small class="green">
+                        <b>编辑</b>
+                    </small>
+                    <input id="skip-validation" type="checkbox" class="ace ace-switch ace-switch-4">
+                    <span class="lbl middle"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="widget-body">
+            <div class="widget-main">
+                <form class="form-horizontal" id="validation-form" method="get">
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="email">Email Address:</label>
+
+                        <div class="col-xs-12 col-sm-9">
+                            <div class="clearfix">
+                                <input type="email" name="email" id="email" class="col-xs-12 col-sm-6" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-2"></div>
+
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Password:</label>
+
+                        <div class="col-xs-12 col-sm-9">
+                            <div class="clearfix">
+                                <input type="password" name="password" id="password" class="col-xs-12 col-sm-4" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-2"></div>
+
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password2">Confirm Password:</label>
+
+                        <div class="col-xs-12 col-sm-9">
+                            <div class="clearfix">
+                                <input type="password" name="password2" id="password2" class="col-xs-12 col-sm-4" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hr hr-dotted"></div>
+
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="name">Company Name:</label>
+
+                        <div class="col-xs-12 col-sm-9">
+                            <div class="clearfix">
+                                <input type="text" id="name" name="name" class="col-xs-12 col-sm-5" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-2"></div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="url">Company URL:</label>
+
+                        <div class="col-xs-12 col-sm-9">
+                            <div class="clearfix">
+                                <input type="url" id="url" name="url" class="col-xs-12 col-sm-8" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hr hr-dotted"></div>
+
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-3 no-padding-right">Subscribe to</label>
+
+                        <div class="col-xs-12 col-sm-9">
+                            <div>
+                                <label>
+                                    <input name="subscription" value="1" type="checkbox" class="ace" />
+                                    <span class="lbl"> Latest news and announcements</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label>
+                                    <input name="subscription" value="2" type="checkbox" class="ace" />
+                                    <span class="lbl"> Product offers and discounts</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-2"></div>
+
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-3 no-padding-right">Gender</label>
+
+                        <div class="col-xs-12 col-sm-9">
+                            <div>
+                                <label class="line-height-1 blue">
+                                    <input name="gender" value="1" type="radio" class="ace" />
+                                    <span class="lbl"> Male</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="line-height-1 blue">
+                                    <input name="gender" value="2" type="radio" class="ace" />
+                                    <span class="lbl"> Female</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hr hr-dotted"></div>
+
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="platform">Platform</label>
+
+                        <div class="col-xs-12 col-sm-9">
+                            <div class="clearfix">
+                                <select class="input-medium" id="platform" name="platform">
+                                    <option value="">------------------</option>
+                                    <option value="linux">Linux</option>
+                                    <option value="windows">Windows</option>
+                                    <option value="mac">Mac OS</option>
+                                    <option value="ios">iOS</option>
+                                    <option value="android">Android</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-2"></div>
+
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="comment">Comment</label>
+
+                        <div class="col-xs-12 col-sm-9">
+                            <div class="clearfix">
+                                <textarea class="input-xlarge" name="comment" id="comment"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-8"></div>
+
+                    <div class="form-group">
+                        <div class="col-xs-12 col-sm-4 col-sm-offset-3">
+                            <label>
+                                <input name="agree" id="agree" type="checkbox" class="ace" />
+                                <span class="lbl"> I accept the policy</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="wizard-actions">
+        <button class="btn btn-info" type="button">
+            <i class="ace-icon fa fa-check bigger-110"></i>
+            保存
+        </button>
+
+        &nbsp; &nbsp; &nbsp;
+        <a href="admin.html" class="btn">
+            <i class="ace-icon fa fa-undo bigger-110"></i>
+            返回
+        </a>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+
+{% endblock page %}
+
+
+
+{% block jscode %}
+    {{ super() }}
+    <script>
+        $(document).ready(function() {
+
+            $('#validation-form').validate({
+                errorElement: 'div',
+                errorClass: 'help-block',
+                focusInvalid: false,
+                ignore: "",
+                rules: {
+                    email: {
+                        required: true,
+                        email:true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5
+                    },
+                    password2: {
+                        required: true,
+                        minlength: 5,
+                        equalTo: "#password"
+                    },
+                    name: {
+                        required: true
+                    },
+                    phone: {
+                        required: true,
+                        phone: 'required'
+                    },
+                    url: {
+                        required: true,
+                        url: true
+                    },
+                    comment: {
+                        required: true
+                    },
+                    state: {
+                        required: true
+                    },
+                    platform: {
+                        required: true
+                    },
+                    subscription: {
+                        required: true
+                    },
+                    gender: {
+                        required: true
+                    },
+                    agree: {
+                        required: true
+                    }
+                },
+
+                messages: {
+                    email: {
+                        required: "Please provide a valid email.",
+                        email: "Please provide a valid email."
+                    },
+                    password: {
+                        required: "Please specify a password.",
+                        minlength: "Please specify a secure password."
+                    },
+                    state: "Please choose state",
+                    subscription: "Please choose at least one option",
+                    gender: "Please choose gender",
+                    agree: "Please accept our policy"
+                },
+
+
+                highlight: function (e) {
+                    $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+                },
+
+                success: function (e) {
+                    $(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
+                    $(e).remove();
+                },
+
+                errorPlacement: function (error, element) {
+                    if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
+                        var controls = element.closest('div[class*="col-"]');
+                        if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
+                        else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
+                    }
+                    else if(element.is('.select2')) {
+                        error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
+                    }
+                    else if(element.is('.chosen-select')) {
+                        error.insertAfter(element.siblings('[class*="chosen-container"]:eq(0)'));
+                    }
+                    else error.insertAfter(element.parent());
+                },
+
+                submitHandler: function (form) {
+                },
+                invalidHandler: function (form) {
+                }
+            });
+
+            $("#menu_2").addClass("active open");
+            $("#menu_2_1").addClass("active");
+        });
+    </script>
+{% endblock %}

@@ -10,6 +10,10 @@ def admin():
     items = range(200)
     return render_template('admin.html',items=items)
 
+@app.route('/edit.html')
+def edit():
+    return render_template('ace_edit.html')
+
 @app.route('/login.html')
 def login():
     return render_template('login.html')

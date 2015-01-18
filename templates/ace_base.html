@@ -5,6 +5,7 @@
     <title>后台管理系统</title>
     <link href="{{ url_for('static',filename='ace/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static',filename='ace/css/font-awesome.min.css') }}" rel="stylesheet">
+
     <link href="{{ url_for('static',filename='ace/css/ace.min.css') }}" rel="stylesheet">
     <script src="{{ url_for('static',filename='ace/js/ace-extra.min.js') }}"></script>
 </head>
@@ -183,30 +184,6 @@
     </script>
 
     <div id="sidebar" class="sidebar responsive">
-
-        <div class="sidebar-shortcuts" id="sidebar-shortcuts">
-            <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-                <button class="btn btn-success">
-                    <i class="ace-icon fa fa-signal"></i>
-                </button>
-                <button class="btn btn-info">
-                    <i class="ace-icon fa fa-pencil"></i>
-                </button>
-                <button class="btn btn-warning">
-                    <i class="ace-icon fa fa-users"></i>
-                </button>
-                <button class="btn btn-danger">
-                    <i class="ace-icon fa fa-cogs"></i>
-                </button>
-            </div>
-            <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-                <span class="btn btn-success"></span>
-                <span class="btn btn-info"></span>
-                <span class="btn btn-warning"></span>
-                <span class="btn btn-danger"></span>
-            </div>
-        </div><!-- /.侧栏快捷按钮 -->
-
         <ul class="nav nav-list">
             <li class="" id="menu_1">
                 <a href="admin.html">
@@ -254,8 +231,8 @@
         <div class="main-content-inner">
             <div class="breadcrumbs" id="breadcrumbs">
                 <script type="text/javascript">
-							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-						</script>
+                    try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+                </script>
 
                 <ul class="breadcrumb">
                     <li>
@@ -322,6 +299,9 @@
 <script src="{{ url_for('static',filename='ace/js/jquery.dataTables.bootstrap.min.js') }}"></script>
 <script src="{{ url_for('static',filename='ace/js/dataTables.tableTools.min.js') }}"></script>
 <script src="{{ url_for('static',filename='ace/js/dataTables.colVis.min.js') }}"></script>
+
+<script src="{{ url_for('static',filename='ace/js/jquery.validate.min.js') }}"></script>
+
 <script src="{{ url_for('static',filename='ace/js/ace-elements.min.js') }}"></script>
 <script src="{{ url_for('static',filename='ace/js/ace.min.js') }}"></script>
 
