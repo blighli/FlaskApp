@@ -11,7 +11,8 @@ def index():
 
 @app.route('/admin.html')
 def admin():
-    return render_template('admin.html')
+    items = range(200)
+    return render_template('admin.html',items=items)
 
 @app.route('/ace_base.html')
 def base():

@@ -1,1 +1,20 @@
-{% extends "ace_base.html" %}
+{% extends "ace_table.html" %}
+
+{% block table_th %}
+    <th>域名</th>
+    <th>价格</th>
+    <th>点击</th>
+    <th>更新</th>
+    <th>状态</th>
+{% endblock table_th %}
+
+
+{% block table_td %}
+    <td>
+        <a href="#">{{ item }}.app.com</a>
+    </td>
+    <td>$45</td>
+    <td>3,330</td>
+    <td>Feb 12</td>
+    <td>Expiring</td>
+{% endblock table_td %}
